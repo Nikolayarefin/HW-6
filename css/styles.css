@@ -586,7 +586,7 @@ display: flex;
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    min-width: 250px;
+    min-width: 200px;
     height: 50px;
     border: 1px;
     display: flex;
@@ -618,8 +618,8 @@ display: flex;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
+  
 }
 
 .backdrop.is-hidden .modal {
@@ -629,7 +629,7 @@ display: flex;
 .modal-btn {
   width: 30px;
   height: 30px;
-  border: 1px solid #909090;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
@@ -656,8 +656,7 @@ display: flex;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  margin-top: 46px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .modal-field {
@@ -667,20 +666,24 @@ display: flex;
 .modal-field-chec {
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
 }
 
 .input-wrap {
   position: relative;
 }
 
-.modal-input {
+.modal-input{
   width: 100%;
-  height: 45px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 5px;
   font-size: 14px;
   padding-left: 35px;
   outline: transparent;
+  margin-top: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -716,8 +719,8 @@ display: flex;
 
 .modal-comment {
   width: 100%;
-  height: 100px;
-  border: 1px solid #555555;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 5px;
   resize: none;
   padding: 10px;
@@ -730,6 +733,7 @@ display: flex;
   display: flex;
   align-items: center;
   position: relative;
+  /* padding-left: 12px; */
 }
 
 .check-text span {
@@ -768,7 +772,7 @@ display: flex;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 250px;
+  min-width: 200px;
   height: 50px;
   border: 1px;
 }
@@ -787,8 +791,9 @@ display: flex;
 
 .form-link {
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: underline;
-  color: #2196f3;
+    line-height:1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+    padding-left: 3px;
 }
